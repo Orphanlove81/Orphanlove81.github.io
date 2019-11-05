@@ -4,14 +4,51 @@
 	<meta charset="utf-8"> 
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>The Pandas Guide to China</title>
+	<!-- Bootstrap styles -->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<!-- Custom styles for this template -->
-    <link href="css/carousel.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/style.css">
-	<script src="https://unpkg.com/scrollreveal"></script>
-  <script type="text/javascript" src="js/form-validation.js"></script>
+	<script src="https://unpkg.com/scrollreveal@4.0.5/dist/scrollreveal.js"></script>
+  	<script type="text/javascript" src="js/form-validation.js"></script>
+	<style>
+	/* Form Upload & Preview CSS */
+      .btn-file:hover {
+		  background-color: #d9f4f4;
+		  border: 1px solid #007bff;
+	  }
+      .btn-file {
+          position: relative;
+          overflow: hidden;
+
+          background-color: #e9ecef;
+          border: 1px solid #d7dce1;
+          padding: 0.4rem .75rem;
+          margin-right: -3px;
+      }
+      .btn-file input[type=file] {
+          position: absolute;
+          top: 0;
+          right: 0;
+          min-width: 100%;
+          min-height: 100%;
+          font-size: 100px;
+          text-align: right;
+          filter: alpha(opacity=0);
+          opacity: 0;
+          outline: none;
+          background: white;
+          cursor: inherit;
+          display: block;
+      }
+      #img-upload{
+          width: 100%;
+      }
+      .form-control:disabled, .form-control[readonly] {
+    	background-color: #ffffff;
+	    opacity: 1;
+	  }
+    </style>
   <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/panda-favicon-blue-border.png">
-  <link rel="manifest" href="js/manifest.json">
 </head>
 <body>
   <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
@@ -59,30 +96,6 @@
       </div>
   </nav>  
 	
-
-
-
-  <!-- Marketing messaging and featurettes
-  ================================================== -->
-  <!-- Wrap the rest of the page in another container to center all the content. -->
-
-  <!-- START THE FEATURETTES -->
-  <!--
-  <section class="blue" style="">
-    <div class="container marketing margin-top-mobile">
-
-      <div class="row featurette">
-        <div class="col-md-6 order-md-2">
-          <h3 class="featurette-heading"><span class="text-white">I want to teach in China!</span></h3><br>
-          <h3><span class="text-yellow">Complete the form below to apply.</span></h3>
-        </div>
-        <div class="col-md-6 order-md-1">
-          <img src="img/lanterns3-1920x390-low.jpg">
-        </div>
-      </div>
-    </div>
-  </section>
-  -->
     
     <section id="hero-img">
         <div class="text-center">
@@ -120,6 +133,9 @@
                 </div>
                 <input type="text" class="form-control" id="validationCustomUsername" placeholder="Username"
                   aria-describedby="inputGroupPrepend" required>
+                <div class="valid-feedback">
+                  Looks good!
+              	</div>
                 <div class="invalid-feedback">
                   Please choose a username.
                 </div>
@@ -130,6 +146,9 @@
             <div class="col-md-6 mb-3">
               <label for="validationCustom03">City</label>
               <input type="text" class="form-control" id="validationCustom03" placeholder="City" required>
+	            <div class="valid-feedback">
+	              Looks good!
+	          	</div>
               <div class="invalid-feedback">
                 Please provide a valid city.
               </div>
@@ -137,6 +156,9 @@
             <div class="col-md-3 mb-3">
               <label for="validationCustom04">State</label>
               <input type="text" class="form-control" id="validationCustom04" placeholder="State" required>
+                <div class="valid-feedback">
+                  Looks good!
+              	</div>
               <div class="invalid-feedback">
                 Please provide a valid state.
               </div>
@@ -144,22 +166,29 @@
             <div class="col-md-3 mb-3">
               <label for="validationCustom05">Zip</label>
               <input type="text" class="form-control" id="validationCustom05" placeholder="Zip" required>
+                <div class="valid-feedback">
+                  Looks good!
+              	</div>
               <div class="invalid-feedback">
                 Please provide a valid zip.
               </div>
             </div>
           </div>
+
+          <!-- File Uploads Section -->
+          <label for="inputGroupFileAddon01">Upload your Resume here</label>
           <div class="input-group">
             <div class="input-group-prepend">
-              <span class="input-group-text" id="inputGroupFileAddon01">Upload</span>
+              <span class="input-group-text" id="inputGroupFileAddon01">Upload Resume / CV</span>
             </div>
             <div class="custom-file">
               <input type="file" class="custom-file-input" id="inputGroupFile01"
                 aria-describedby="inputGroupFileAddon01">
               <label class="custom-file-label" for="inputGroupFile01">Choose file</label>
             </div>
-          </div>          
-          <div class="input-group col-md-8 mb-3">
+          </div><br>
+          <label for="inputGroupFileAddon01">Upload your Picture here</label>          
+          <div class="input-group col-md-8 mb-3" style="margin-top:0px;">
             <div class="input-group-prepend">
               <span class="input-group-text" id="inputGroupFileAddon01">Upload</span>
             </div>
@@ -169,23 +198,26 @@
               <label class="custom-file-label" for="inputGroupFile01">Choose file</label>
             </div>
           </div>
-          <div class="input-group col-md-8 mb-3">  
-            <div class="form-group">
-              <label for="exampleFormControlFile1">Example file input</label>
-              <input type="file" class="form-control-file" id="exampleFormControlFile1">
-            </div>
 
-            <div class="input-group-prepend">
-              <span class="input-group-text" id="exampleFormFileAddon2">Upload</span>
-            </div>
-            <div class="form-group">
-              <label  class="exampleFormControlFile2" for="exampleFormControlFile2">Example file input</label>
-              <input type="file" class="form-control-file" id="exampleFormControlFile2" 
-               aria-describedby="exampleFormFileAddon2">
-            </div>
+          <!-- New file upload with preview -->
+          <div class="col-md-6" style="padding-left: 0;">
+              <div class="form-group">
+                  <label>Upload Image</label>
+                  <div class="input-group">
+                      <span class="input-group-btn">
+                          <span class="btn btn-default btn-file">
+                              Browse… <input type="file" id="imgInp" class="custom-file-input">
+                          </span>
+                      </span>
+                      <input type="text" class="form-control" readonly>
+                  </div>
+                  <img id='img-upload'/>
+              </div>
           </div>
+          <!-- End New file upload with preview -->
+          <!-- End File Uploads Section -->
 
-          <div class="form-group">
+          <div class="form-group" style="margin-top:50px;">
             <div class="form-check">
               <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
               <label class="form-check-label" for="invalidCheck">
@@ -200,111 +232,13 @@
         </form>
     </div>
   </section>
-
-
-  <section id="application-form" style="display: none;">
-    <div class="container application-form">
-
-        <form class="needs-validation" novalidate>
-          <div class="form-row">
-            <div class="col-md-4 mb-3">
-              <label for="validationCustom01">First name</label>
-              <input type="text" class="form-control" id="validationCustom01" placeholder="First name" value="Mark"
-                required>
-              <div class="valid-feedback">
-                Looks good!
-              </div>
-            </div>
-            <div class="col-md-4 mb-3">
-              <label for="validationCustom02">Last name</label>
-              <input type="text" class="form-control" id="validationCustom02" placeholder="Last name" value="Otto"
-                required>
-              <div class="valid-feedback">
-                Looks good!
-              </div>
-            </div>
-            <div class="col-md-4 mb-3">
-              <label for="validationCustomUsername">Username</label>
-              <div class="input-group">
-                <div class="input-group-prepend">
-                  <span class="input-group-text" id="inputGroupPrepend">@</span>
-                </div>
-                <input type="text" class="form-control" id="validationCustomUsername" placeholder="Username"
-                  aria-describedby="inputGroupPrepend" required>
-                <div class="invalid-feedback">
-                  Please choose a username.
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="form-row">
-            <div class="col-md-6 mb-3">
-              <label for="validationCustom03">City</label>
-              <input type="text" class="form-control" id="validationCustom03" placeholder="City" required>
-              <div class="invalid-feedback">
-                Please provide a valid city.
-              </div>
-            </div>
-            <div class="col-md-3 mb-3">
-              <label for="validationCustom04">State</label>
-              <input type="text" class="form-control" id="validationCustom04" placeholder="State" required>
-              <div class="invalid-feedback">
-                Please provide a valid state.
-              </div>
-            </div>
-            <div class="col-md-3 mb-3">
-              <label for="validationCustom05">Zip</label>
-              <input type="text" class="form-control" id="validationCustom05" placeholder="Zip" required>
-              <div class="invalid-feedback">
-                Please provide a valid zip.
-              </div>
-            </div>
-          </div>
-          <div class="input-group col-md-8 mb-3">
-            <div class="input-group-prepend">
-              <span class="input-group-text" id="inputGroupFileAddon01">Upload</span>
-            </div>
-            <div class="custom-file">
-              <input type="file" class="custom-file-input" id="inputGroupFile01"
-                aria-describedby="inputGroupFileAddon01">
-              <label class="custom-file-label" for="inputGroupFile01">Choose file</label>
-            </div>
-          </div>
-
-          <div class="form-group">
-              <label for="exampleFormControlFile1">Example file input</label>
-              <input type="file" class="form-control-file" id="exampleFormControlFile1">
-          </div>
-
-          <div class="form-group">
-            <div class="form-check">
-              <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
-              <label class="form-check-label" for="invalidCheck">
-                Agree to terms and conditions
-              </label>
-              <div class="invalid-feedback">
-                You must agree before submitting.
-              </div>
-            </div>
-          </div>
-          <button class="btn btn-primary btn-lg" type="submit">Submit form</button>
-        </form>
-        <form>
-          <div class="form-group">
-              <label for="exampleFormControlFile1">Example file input</label>
-              <input type="file" class="form-control-file" id="exampleFormControlFile1">
-          </div>
-        </form>
-    </div>
-  </section>
-
 
   <section id="footer">
   	<footer class="container py-5">
   	  <div class="row">
   	    <div class="col-12 col-md">
           <img class="footer-logo" src="img/panda-logo.png">
-  	      <!--<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="d-block mb-2" role="img" viewBox="0 0 24 24" focusable="false"><title>Product</title><circle cx="12" cy="12" r="10"/><path d="M14.31 8l5.74 9.94M9.69 8h11.48M7.38 12l5.74-9.94M9.69 16L3.95 6.06M14.31 16H2.83m13.79-4l-5.74 9.94"/></svg>-->
+  	     
   	      <small class="d-block mb-3 text-dark">&copy; 2017-2019</small> </div>
   	    <div class="col-6 col-md">
   	      <h5>Features</h5>
@@ -348,8 +282,73 @@
   	</footer>
   </section>
 
+
+  <!-- jQuery js -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+  <!-- File Uploads Show fileName script -->
+  	<script>
+	  $('#inputGroupFile02').on('change',function(){
+	      //get the file name
+	      var fileName = $(this).val();
+	      //replace the "Choose a file" label
+	      $(this).next('.custom-file-label').html(fileName);
+	  })
+	</script>
+
+	<script>
+          // Add the following code if you want the name of the file appear on select
+          $(".custom-file-input").on("change", function() {
+           var fileName = $(this).val().split("\\").pop();
+          $(this).siblings(".custom-file-label").addClass("selected").html(fileName);
+          });
+    </script> 
+
+        <!-- New file upload with preview JS -->
+    <script>
+    $(document).ready( function() {
+    	$(document).on('change', '.btn-file :file', function() {
+		var input = $(this),
+			label = input.val().replace(/\\/g, '/').replace(/.*\//, '');
+		input.trigger('fileselect', [label]);
+		});
+
+		$('.btn-file :file').on('fileselect', function(event, label) {
+
+		    var input = $(this).parents('.input-group').find(':text'),
+		        log = label;
+
+		    if( input.length ) {
+		        input.val(log);
+		    } else {
+		        if( log ) alert(log);
+		    }
+
+		});
+		function readURL(input) {
+		    if (input.files && input.files[0]) {
+		        var reader = new FileReader();
+
+		        reader.onload = function (e) {
+		            $('#img-upload').attr('src', e.target.result);
+		        }
+
+		        reader.readAsDataURL(input.files[0]);
+		    }
+		}
+
+		$("#imgInp").change(function(){
+		    readURL(this);
+		}); 	
+	});
+	</script>
+
+
+  <!-- popper.js -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <!-- tether.js 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>-->
+  <!-- bootstrap.js -->
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
 </html>
