@@ -111,15 +111,14 @@
           <div class="form-row">
             <div class="col-md-4 mb-3">
               <label for="validationCustom01">First name</label>
-              <input type="text" class="form-control" id="validationCustom01" placeholder="First name" value="" name="name" required>
+              <input type="text" class="form-control" id="validationCustom01" placeholder="First name" value="" name="fname" required>
               <div class="valid-feedback">
                 Looks good!
               </div>
             </div>
             <div class="col-md-4 mb-3">
               <label for="validationCustom02">Last name</label>
-              <input type="text" class="form-control" id="validationCustom02" placeholder="Last name" value="Otto"
-                required>
+              <input type="text" class="form-control" id="validationCustom02" placeholder="Last name" value="" name="lname" required>
               <div class="valid-feedback">
                 Looks good!
               </div>
@@ -162,7 +161,7 @@
           <div class="form-row">
             <div class="col-md-6 mb-3">
               <label for="validationCustom03">City</label>
-              <input type="text" class="form-control" id="validationCustom03" placeholder="City" required>
+              <input type="text" class="form-control" id="validationCustom03" placeholder="City" name="city" required>
 	            <div class="valid-feedback">
 	              Looks good!
 	          	</div>
@@ -172,7 +171,7 @@
             </div>
             <div class="col-md-3 mb-3">
               <label for="validationCustom04">State</label>
-              <input type="text" class="form-control" id="validationCustom04" placeholder="State" required>
+              <input type="text" class="form-control" id="validationCustom04" placeholder="State" name="state" required>
                 <div class="valid-feedback">
                   Looks good!
               	</div>
@@ -182,7 +181,7 @@
             </div>
             <div class="col-md-3 mb-3">
               <label for="validationCustom05">Zip</label>
-              <input type="text" class="form-control" id="validationCustom05" placeholder="Zip" required>
+              <input type="text" class="form-control" id="validationCustom05" placeholder="Zip" name="zipcode" required>
                 <div class="valid-feedback">
                   Looks good!
               	</div>
@@ -200,7 +199,7 @@
             </div>
             <div class="custom-file">
               <input type="file" class="custom-file-input" id="inputGroupFile01"
-                aria-describedby="inputGroupFileAddon01">
+                aria-describedby="inputGroupFileAddon01" name="CV File">
               <label class="custom-file-label" for="inputGroupFile01">Choose file</label>
             </div>
           </div><br>
@@ -211,7 +210,7 @@
             </div>
             <div class="custom-file">
               <input type="file" class="custom-file-input" id="inputGroupFile01"
-                aria-describedby="inputGroupFileAddon01">
+                aria-describedby="inputGroupFileAddon01" name="Image File">
               <label class="custom-file-label" for="inputGroupFile01">Choose file</label>
             </div>
           </div>
@@ -223,7 +222,7 @@
                   <div class="input-group">
                       <span class="input-group-btn">
                           <span class="btn btn-default btn-file">
-                              Browse… <input type="file" id="imgInp" class="custom-file-input">
+                              Browse… <input type="file" id="imgInp" class="custom-file-input" name="Image File2">
                           </span>
                       </span>
                       <input type="text" class="form-control" readonly>
