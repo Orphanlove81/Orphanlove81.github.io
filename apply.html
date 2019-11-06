@@ -50,7 +50,7 @@
     </style>
   <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/panda-favicon-blue-border.png">
 </head>
-<body>
+<body style="background-color: aliceblue;">
   <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
     <img src="img/panda-logo.jpg">
       <a class="navbar-brand" href="#">The Pandas Guide to China</a>
@@ -255,41 +255,58 @@
 		  <input type='hidden' name='redirect_to' value='<the complete return url e.g. http://fooey.com/thank-you.html>' />-->
 		  <!-- all your input fields here.... -->
 
+		  <!-- name fist & last -->
           <div class="form-row">
-            <div class="col-md-4 mb-3">
+            <div class="col-md-6 mb-3">
               <label for="validationCustom01">First name</label>
               <input type="text" class="form-control" id="validationCustom01" placeholder="First name" value="" name="fname" required>
               <div class="valid-feedback">
                 Looks good!
               </div>
             </div>
-            <div class="col-md-4 mb-3">
+            <div class="col-md-6 mb-3">
               <label for="validationCustom02">Last name</label>
               <input type="text" class="form-control" id="validationCustom02" placeholder="Last name" value="" name="lname" required>
               <div class="valid-feedback">
                 Looks good!
               </div>
             </div>
-         </div>
+          </div>
 
           
           <!-- email -->
-          <div class="form-row">
-            <div class="col-md-6 mb-3">
 	          <label for="validationCustomEmail">Email</label>
-	          <input type="email" class="form-control" id="validationCustomEmail" placeholder="Email" value="" name="_replyto" required>
-              <div class="valid-feedback">
-                Looks good!
+	          <div class="input-group mb-3">
+				<div class="input-group-prepend">
+				  <span class="input-group-text" id="basic-addon1">JohnDoe@example.com</span>
+				</div>
+	          	<input type="email" class="form-control" id="validationCustomEmail" placeholder="Email" value="" name="_replyto" required>
               </div>
-              <div class="invalid-feedback">
-                Please provide a valid email.
-              </div>
-	        </div>
-	      </div>
+                <div class="valid-feedback">
+                  Looks good!
+                </div>
+                <div class="invalid-feedback">
+                  Please provide a valid email.
+                </div>
           
+          <!-- Nationality -->
           <div class="form-row">
             <div class="col-md-6 mb-3">
-              <label for="validationCustom03">City</label>
+              <label for="validationCustom03">Nationality</label>
+              <input type="text" class="form-control" id="validationCustom03" placeholder="American" name="nationality" required>
+	            <div class="valid-feedback">
+	              Looks good!
+	          	</div>
+              <div class="invalid-feedback">
+                Please choose your Nationality.
+              </div>
+            </div>
+          </div>
+
+          <!-- Residence -->
+          <div class="form-row">
+          	<div class="col-md-6 mb-3">
+              <label for="validationCustom03">Country</label>
               <input type="text" class="form-control" id="validationCustom03" placeholder="City" name="city" required>
 	            <div class="valid-feedback">
 	              Looks good!
@@ -299,15 +316,25 @@
               </div>
             </div>
             <div class="col-md-3 mb-3">
-              <label for="validationCustom04">State</label>
+              <label for="validationCustom04">State / Province</label>
               <input type="text" class="form-control" id="validationCustom04" placeholder="State" name="state" required>
                 <div class="valid-feedback">
                   Looks good!
               	</div>
               <div class="invalid-feedback">
-                Please provide a valid state.
+                Please provide a valid state or province.
               </div>
             </div>
+            <div class="col-md-6 mb-3">
+              <label for="validationCustom03">City</label>
+              <input type="text" class="form-control" id="validationCustom03" placeholder="City" name="city" required>
+	            <div class="valid-feedback">
+	              Looks good!
+	          	</div>
+              <div class="invalid-feedback">
+                Please provide a valid city.
+              </div>
+            </div>            
             <div class="col-md-3 mb-3">
               <label for="validationCustom05">Zip</label>
               <input type="text" class="form-control" id="validationCustom05" placeholder="Zip" name="zipcode" required>
@@ -322,7 +349,7 @@
 
           <!-- File Uploads Section -->
           <label for="inputGroupFileAddon01">Upload your Resume here</label>
-          <div class="input-group">
+          <div class="input-group col-md-8 mb-3" style="margin-top:0px;">
             <div class="input-group-prepend">
               <span class="input-group-text" id="inputGroupFileAddon01">Upload Resume / CV</span>
             </div>
