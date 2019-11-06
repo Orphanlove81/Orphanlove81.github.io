@@ -107,7 +107,7 @@
     <section id="application-form">
       <div class="container application-form">
 
-        <form class="needs-validation" novalidate action="https://formspree.io/thepandasguide@gmail.com" method="POST">
+        <form class="needs-validation" novalidate action="https://formspree.io/thepandasguide@gmail.com" method="POST" enctype="multipart/form-data">
           <div class="form-row">
             <div class="col-md-4 mb-3">
               <label for="validationCustom01">First name</label>
@@ -222,7 +222,7 @@
                   <div class="input-group">
                       <span class="input-group-btn">
                           <span class="btn btn-default btn-file">
-                              Browse… <input type="file" id="imgInp" class="custom-file-input" name="Image File2">
+                              Browse… <input type="file" id="imgInp" class="custom-file-input" name="attachment">
                           </span>
                       </span>
                       <input type="text" class="form-control" readonly>
@@ -246,6 +246,18 @@
           </div>
           <button class="btn btn-primary btn-lg" type="submit">Submit form</button>
         </form>
+
+        <!-- START Simple Form -->
+		<form action="https://getsimpleform.com/messages?form_api_token=74dd9d8b72a4ab7cfe1450e845612ca2" method="post">
+		  <!-- the redirect_to is optional, the form will redirect to the referrer on submission 
+		  <input type='hidden' name='redirect_to' value='<the complete return url e.g. http://fooey.com/thank-you.html>' />-->
+		  <!-- all your input fields here.... -->
+		  <input type='text' name='test' />
+		  <input type='submit' value='Test form' />
+		</form>
+        <!-- END Simple Form -->
+
+
     </div>
   </section>
 
