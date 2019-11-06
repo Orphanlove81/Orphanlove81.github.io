@@ -248,13 +248,131 @@
         </form>
 
         <!-- START Simple Form -->
-		<form action="https://getsimpleform.com/messages?form_api_token=74dd9d8b72a4ab7cfe1450e845612ca2" method="post">
+		<form class="needs-validation" novalidate action="https://getsimpleform.com/messages?form_api_token=74dd9d8b72a4ab7cfe1450e845612ca2" method="post" enctype="multipart/form-data">
 		  <!-- the redirect_to is optional, the form will redirect to the referrer on submission 
 		  <input type='hidden' name='redirect_to' value='<the complete return url e.g. http://fooey.com/thank-you.html>' />-->
 		  <!-- all your input fields here.... -->
-		  <input type='text' name='test' />
-		  <input type='submit' value='Test form' />
-		</form>
+
+          <div class="form-row">
+            <div class="col-md-4 mb-3">
+              <label for="validationCustom01">First name</label>
+              <input type="text" class="form-control" id="validationCustom01" placeholder="First name" value="" name="fname" required>
+              <div class="valid-feedback">
+                Looks good!
+              </div>
+            </div>
+            <div class="col-md-4 mb-3">
+              <label for="validationCustom02">Last name</label>
+              <input type="text" class="form-control" id="validationCustom02" placeholder="Last name" value="" name="lname" required>
+              <div class="valid-feedback">
+                Looks good!
+              </div>
+            </div>
+         </div>
+
+          
+          <!-- email -->
+          <div class="form-row">
+            <div class="col-md-6 mb-3">
+	          <label for="validationCustomEmail">Email</label>
+	          <input type="email" class="form-control" id="validationCustomEmail" placeholder="Email" value="" name="_replyto" required>
+              <div class="valid-feedback">
+                Looks good!
+              </div>
+              <div class="invalid-feedback">
+                Please provide a valid email.
+              </div>
+	        </div>
+	      </div>
+          
+          <div class="form-row">
+            <div class="col-md-6 mb-3">
+              <label for="validationCustom03">City</label>
+              <input type="text" class="form-control" id="validationCustom03" placeholder="City" name="city" required>
+	            <div class="valid-feedback">
+	              Looks good!
+	          	</div>
+              <div class="invalid-feedback">
+                Please provide a valid city.
+              </div>
+            </div>
+            <div class="col-md-3 mb-3">
+              <label for="validationCustom04">State</label>
+              <input type="text" class="form-control" id="validationCustom04" placeholder="State" name="state" required>
+                <div class="valid-feedback">
+                  Looks good!
+              	</div>
+              <div class="invalid-feedback">
+                Please provide a valid state.
+              </div>
+            </div>
+            <div class="col-md-3 mb-3">
+              <label for="validationCustom05">Zip</label>
+              <input type="text" class="form-control" id="validationCustom05" placeholder="Zip" name="zipcode" required>
+                <div class="valid-feedback">
+                  Looks good!
+              	</div>
+              <div class="invalid-feedback">
+                Please provide a valid zip.
+              </div>
+            </div>
+          </div>
+
+          <!-- File Uploads Section -->
+          <label for="inputGroupFileAddon01">Upload your Resume here</label>
+          <div class="input-group">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="inputGroupFileAddon01">Upload Resume / CV</span>
+            </div>
+            <div class="custom-file">
+              <input type="file" class="custom-file-input" id="inputGroupFile01"
+                aria-describedby="inputGroupFileAddon01" name="CV File">
+              <label class="custom-file-label" for="inputGroupFile01">Choose file</label>
+            </div>
+          </div><br>
+          <label for="inputGroupFileAddon01">Upload your Picture here</label>          
+          <div class="input-group col-md-8 mb-3" style="margin-top:0px;">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="inputGroupFileAddon01">Upload</span>
+            </div>
+            <div class="custom-file">
+              <input type="file" class="custom-file-input" id="inputGroupFile01"
+                aria-describedby="inputGroupFileAddon01" name="Image File">
+              <label class="custom-file-label" for="inputGroupFile01">Choose file</label>
+            </div>
+          </div>
+
+          <!-- New file upload with preview -->
+          <div class="col-md-6" style="padding-left: 0;">
+              <div class="form-group">
+                  <label>Upload Image</label>
+                  <div class="input-group">
+                      <span class="input-group-btn">
+                          <span class="btn btn-default btn-file">
+                              Browse… <input type="file" id="imgInp" class="custom-file-input" name="attachment">
+                          </span>
+                      </span>
+                      <input type="text" class="form-control" readonly>
+                  </div>
+                  <img id='img-upload'/>
+              </div>
+          </div>
+          <!-- End New file upload with preview -->
+          <!-- End File Uploads Section -->
+
+          <div class="form-group" style="margin-top:50px;">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+              <label class="form-check-label" for="invalidCheck">
+                Agree to terms and conditions
+              </label>
+              <div class="invalid-feedback">
+                You must agree before submitting.
+              </div>
+            </div>
+          </div>
+          <button class="btn btn-primary btn-lg" type="submit" value='Test form'>Submit form</button>
+        </form>
         <!-- END Simple Form -->
 
 
