@@ -40,7 +40,7 @@
           cursor: inherit;
           display: block;
       }
-      #img-upload{
+      #img-upload-1, #img-upload-2 {
           width: 100%;
       }
       .form-control:disabled, .form-control[readonly] {
@@ -306,23 +306,23 @@
           <!-- Residence -->
           <div class="form-row">
           	<div class="col-md-6 mb-3">
-              <label for="validationCustom03">Country</label>
-              <input type="text" class="form-control" id="validationCustom03" placeholder="City" name="city" required>
+              <label for="validationCustom03">Country of Residence</label>
+              <input type="text" class="form-control" id="validationCustom03" placeholder="Country" name="country" required>
 	            <div class="valid-feedback">
 	              Looks good!
 	          	</div>
               <div class="invalid-feedback">
-                Please provide a valid city.
+                Where do you live? Please provide your current country of residence.
               </div>
             </div>
-            <div class="col-md-3 mb-3">
+            <div class="col-md-6 mb-3">
               <label for="validationCustom04">State / Province</label>
               <input type="text" class="form-control" id="validationCustom04" placeholder="State" name="state" required>
                 <div class="valid-feedback">
                   Looks good!
               	</div>
               <div class="invalid-feedback">
-                Please provide a valid state or province.
+                Please provide your state of residence.
               </div>
             </div>
             <div class="col-md-6 mb-3">
@@ -332,10 +332,10 @@
 	              Looks good!
 	          	</div>
               <div class="invalid-feedback">
-                Please provide a valid city.
+                Please provide your city of residence.
               </div>
             </div>            
-            <div class="col-md-3 mb-3">
+            <div class="col-md-6 mb-3">
               <label for="validationCustom05">Zip</label>
               <input type="text" class="form-control" id="validationCustom05" placeholder="Zip" name="zipcode" required>
                 <div class="valid-feedback">
@@ -371,19 +371,35 @@
             </div>
           </div>
 
-          <!-- New file upload with preview -->
+          <!-- New file upload with preview -1 -->
           <div class="col-md-6" style="padding-left: 0;">
               <div class="form-group">
-                  <label>Upload your Image here</label>
+                  <label>Upload your Picture here</label>
                   <div class="input-group">
                       <span class="input-group-btn">
                           <span class="btn btn-default btn-file">
-                              Browse… <input type="file" id="imgInp" class="custom-file-input" name="docs_file">
+                              Browse… <input type="file" id="imgInp-1" class="custom-file-input" name="image_file">
                           </span>
                       </span>
                       <input type="text" class="form-control" readonly>
                   </div>
-                  <img id='img-upload'/>
+                  <img id='img-upload-1'/>
+              </div>
+          </div>
+          <!-- End New file upload with preview -->
+          <!-- New file upload with preview -2 -->
+          <div class="col-md-6" style="padding-left: 0;">
+              <div class="form-group">
+                  <label>Upload your Degree here</label>
+                  <div class="input-group">
+                      <span class="input-group-btn">
+                          <span class="btn btn-default btn-file">
+                              Browse… <input type="file" id="imgInp-2" class="custom-file-input" name="docs_file">
+                          </span>
+                      </span>
+                      <input type="text" class="form-control" readonly>
+                  </div>
+                  <img id='img-upload-2'/>
               </div>
           </div>
           <!-- End New file upload with preview -->
@@ -408,7 +424,7 @@
     </div>
   </section>
 
-  <section id="footer">
+  <section id="footer" style="margin-top: 0rem;">
   	<footer class="container py-5">
   	  <div class="row">
   	    <div class="col-12 col-md">
@@ -505,14 +521,14 @@
 		        var reader = new FileReader();
 
 		        reader.onload = function (e) {
-		            $('#img-upload').attr('src', e.target.result);
+		            $('#img-upload-1').attr('src', e.target.result);
 		        }
 
 		        reader.readAsDataURL(input.files[0]);
 		    }
 		}
 
-		$("#imgInp").change(function(){
+		$("#imgInp-1").change(function(){
 		    readURL(this);
 		}); 	
 	});
