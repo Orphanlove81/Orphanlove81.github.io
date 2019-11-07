@@ -346,7 +346,11 @@ h2 .text-red {
     color: #141414;
     padding: 2.5px 10px;
 }
-
+.black-on-yellow-text {
+	background: #ffd636;
+	color: #303333;
+	text-shadow: 1px 2px 2px #d8c560;
+}
 
 .featurette>div>img {
 	width: 100%;
@@ -391,7 +395,7 @@ background: #925f3fe6;
 	padding: 15px;
 }
 #hero-img {
-	background: #ff590ee0 url(../img/lanterns3-1920x390-low.jpg) no-repeat;
+	background: #ffd636 url(../img/lanterns3-1920x390-low.jpg) no-repeat;
 	width: 100%;
 	object-fit: cover;
 	height: 400px;
@@ -407,10 +411,10 @@ background: #925f3fe6;
 	background: ;/*#8fa7bf47*/
 }
 .application-form {
-	margin-top: 80px;
-	background: #ffffffcf; /*#f8f9fa;*/
+	margin-top: -200px;
+	background: #ffffff; /*#ffffffcf; #f8f9fa;*/
 	padding: 30px;
-	box-shadow: 0px 0px 13px #ccc;
+	box-shadow: 0px 0px 7px #b0b5b8; /*0px 0px 13px #ccc;*/
 }
 .col-md-8 {
 	padding-left: 0;
@@ -421,7 +425,7 @@ background: #925f3fe6;
 }
 .needs-validation {
 	width: 70%;
-	margin: 100px auto;
+	margin: 125px auto;
 }
 .footer-logo {
 	width: 45px;
@@ -462,12 +466,9 @@ background: #925f3fe6;
 	}
 }
 @media (max-width: 1024px) {
-	.application-form {
-		margin-top: 30px;
-	}
 	.needs-validation {
 		width: 85%;
-		margin: 100px auto 50px;
+		margin: 125px auto 50px;
 	}
 
 }
@@ -485,8 +486,8 @@ background: #925f3fe6;
     	margin-bottom: 4rem;
 	}
 	.navbar-expand-lg .navbar-nav .nav-link {
-	    padding-top: 1rem;
-	    padding-bottom: 0.5rem;
+	    padding-top: 1.5rem; /*1rem & 0.5rem*/
+	    padding-bottom: 1rem;
 	}
 	.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link {
 	border-bottom: 3px solid #ffffff;	
@@ -498,13 +499,10 @@ background: #925f3fe6;
 	.navbar li {
 	    border-bottom: 1px solid #eee;
 	}
-	.application-form {
-		margin-top: 0px;
-	}
 
 	.needs-validation {
 		width: 85%;
-		margin: 100px auto 40px;
+		margin: 125px auto 40px;
 	}
 }
 @media (max-width: 768px) {
@@ -519,6 +517,11 @@ background: #925f3fe6;
 @media (min-width: 48em) {
 	.carousel-caption p {
     	font-size: 1.5rem;
+	}
+}
+@media (max-width: 541px) {
+	.margin-top-30 {
+	margin-top: -30px;
 	}
 }
 @media (max-width: 480px) {
