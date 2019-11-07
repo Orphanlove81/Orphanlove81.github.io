@@ -135,7 +135,7 @@ strong {
 }
 
 #footer {
-	background: #8fa7bf;/*#3981c8, #343a40, #3981c8*/
+	background: #1b6794f0;/*#8fa7bf;#3981c8, #343a40, #3981c8*/
 	color: #fff;
 	margin-top: 8rem;
 }
@@ -143,7 +143,7 @@ strong {
 	color: ;/*#1c1f21 !important*/
 }
 .text-dark {
-	color: #1c1f21;
+	color: #1c1f21 !important;
 }
 .text-white {
 	color: #fff;
@@ -153,14 +153,14 @@ strong {
 }
 h2 .text-blue {
     color: #3f8bdb !important; /* 297fd9  */
-    font-size: 85px;
+    font-size: 75px;
 }
 .text-blue {
 	color: #3f8bdb !important; /*9bd8eb*/
 }
 h2 .text-red {
     color: #db3f4e !important;
-    font-size: 80px;
+    font-size: 75px;
 }
 .text-red {
 	color: #db3f4e !important; /*ee3434*/
@@ -261,6 +261,9 @@ h2 .text-red {
 .blue {
 	background: #217eca;
 }
+.teal {
+	background: #1b6794f0;
+}
 
 /*****  Carousel Captions Text Colors & Highlights  ******/
 
@@ -357,7 +360,6 @@ h2 .text-red {
 	height: ;
 }
 
-/*background:#e7e7e7 / #e8ebeb;*/
 .faces {
 	width: 140px;
 	height: 140px;
@@ -386,6 +388,27 @@ background: #925f3fe6;
 	background-color: #dc3545;
 }
 
+.visa-hero-img {
+	background: #000;
+	background-size: contain;
+}
+.visa-hero-small-left-img {
+	height: 100%;
+	object-fit: cover;
+}
+.visa-hero-small-right-img {
+	height: 100%;
+	object-position: center;
+	object-fit: none;
+	padding: 0;
+}
+/* FAQ page CSS */
+.faq-hero-img {
+	background: #000000 url(../img/lanterns3-1920x390-low.jpg) repeat;
+}
+.faq-hero-text {
+	background: #040404c4;
+}
 /* apply page */
 .text-center {
 	text-align: center;
@@ -395,11 +418,11 @@ background: #925f3fe6;
 	padding: 15px;
 }
 #hero-img {
-	background: #ffd636 url(../img/lanterns3-1920x390-low.jpg) no-repeat;
+	background: transparent  url(../img/carousel/teachers1-1400x514.jpg);
 	width: 100%;
-	object-fit: cover;
 	height: 400px;
 	display: flex;
+	background-size: contain;
 }
 .hero-img img {
 	width: 100%;
@@ -411,7 +434,7 @@ background: #925f3fe6;
 	background: ;/*#8fa7bf47*/
 }
 .application-form {
-	margin-top: -200px;
+	margin-top: 0px;
 	background: #ffffff; /*#ffffffcf; #f8f9fa;*/
 	padding: 30px;
 	box-shadow: 0px 0px 7px #b0b5b8; /*0px 0px 13px #ccc;*/
@@ -425,7 +448,7 @@ background: #925f3fe6;
 }
 .needs-validation {
 	width: 70%;
-	margin: 125px auto;
+	margin: 60px auto;
 }
 .footer-logo {
 	width: 45px;
@@ -468,19 +491,19 @@ background: #925f3fe6;
 @media (max-width: 1024px) {
 	.needs-validation {
 		width: 85%;
-		margin: 125px auto 50px;
+		margin: 60px auto 50px;
 	}
 
 }
 @media (max-width: 992px) {
 	h1,h2 {
-		font-size: 45px !important;
+		font-size: 38px !important;
 	}
 	h3 {
-		font-size: 35px !important;
+		font-size: 32px !important;
 	}
 	h2 .text-red, h2 .text-blue {
-		font-size:55px;
+		font-size:52px;
 	}
 	.carousel {
     	margin-bottom: 4rem;
@@ -502,10 +525,21 @@ background: #925f3fe6;
 
 	.needs-validation {
 		width: 85%;
-		margin: 125px auto 40px;
+		margin: 60px auto 40px;
 	}
 }
 @media (max-width: 768px) {
+	.visa-hero-img {
+		background: #000 url(../img/why-teach-china/cities2-827.jpg) no-repeat;
+		background-size: contain;
+	}
+	.visa-hero-small-left-img {
+    	display: none;
+	}
+	.visa-hero-small-right-img {
+		height: 50%;
+    	visibility: hidden;
+	}
 	.application-form {
 		max-width: 100%;
 	}
