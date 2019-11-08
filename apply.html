@@ -8,17 +8,23 @@
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<!-- Custom styles for this template -->
     <link rel="stylesheet" type="text/css" href="css/style.css">
-	<script src="https://unpkg.com/scrollreveal@4.0.5/dist/scrollreveal.js"></script>
+    <!-- Google Fonts CSS -->
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Dancing+Script&display=swap">
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Dancing+Script|Shadows+Into+Light&display=swap">
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Dancing+Script|Raleway|Shadows+Into+Light|Shadows+Into+Light+Two&display=swap">
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Amatic+SC|Dancing+Script|Raleway:400,700|Shadows+Into+Light|Shadows+Into+Light+Two&display=swap">
+		<!--<script src="https://unpkg.com/scrollreveal@4.0.5/dist/scrollreveal.js"></script>-->
   	<script type="text/javascript" src="js/form-validation.js"></script>
-  	<!-- Bootstrap Selectpicker country select CSS -->
+  	<!-- Bootstrap Selectpicker country select CSS 
   	<link rel="stylesheet" href="dist/css/bootstrap-select-country.min.css">
-  	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.9/dist/css/bootstrap-select.min.css">
+  	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.1/dist/css/bootstrap-select.min.css">
+  	<link rel="stylesheet" type="text/css" href="css/bootstrap-select.min.css">-->
 	<style>
-	/* Form Upload & Preview CSS */
-      .btn-file:hover {
-		  background-color: #d9f4f4;
-		  border: 1px solid #007bff;
-	  }
+			/* Form Upload & Preview CSS */
+	    .btn-file:hover {
+			  	background-color: #d9f4f4;
+			  	border: 1px solid #007bff;
+		  }
       .btn-file {
           position: relative;
           overflow: hidden;
@@ -43,62 +49,63 @@
           cursor: inherit;
           display: block;
       }
-      #img-upload-1, #img-upload-2 {
+      #img-upload-1, #img-upload-2, #img-upload-3, #img-upload-4 {
           width: 100%;
       }
       .form-control:disabled, .form-control[readonly] {
-    	background-color: #ffffff;
-	    opacity: 1;
-	  }
-    </style>
+    			background-color: #ffffff;
+	    		opacity: 1;
+	  	}
+  </style>
+  <!-- Favicon -->
   <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/panda-favicon-blue-border.png">
 </head>
-<body style="background-color: aliceblue;">
-  <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
-    <img src="img/panda-logo.jpg">
-      <a class="navbar-brand" href="#">The Pandas Guide to China</a>
-      <a class="navbar-brand mobile" href="#">The Pandas Guide</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
 
-      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="index.html">Home</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Teach</a>
-          <div class="dropdown-menu" aria-labelledby="dropdown01">
-            <a class="dropdown-item" href="about-teaching-china.html">About teaching in China</a>
-            <a class="dropdown-item" href="why-teach-china.html">Why teach in China</a>
-            <a class="dropdown-item" href="#">Job Requirements</a>
-            <a class="dropdown-item" href="#">Teacher experiences</a>
-            <a class="dropdown-item" href="faqs.html">FAQs</a>
-          </div>         
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="dropdown02" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">China</a>
-          <div class="dropdown-menu" aria-labelledby="dropdown02">
-            <a class="dropdown-item" href="#">Cities</a>
-            <a class="dropdown-item" href="#">Polpular Destinations</a>
-            <a class="dropdown-item" href="#">History</a>
-            <a class="dropdown-item" href="#">Gallery</a>
-          </div>         
-          </li>
-          <li class="nav-item">
-            <a class="nav-link " href="#">Jobs</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link " href="visas.html">Visas</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link " href="apply.html">Apply</a>
-          </li>
-        </ul>
-      </div>
-  </nav>  
-	
+<body style="background-color: aliceblue;">
+	  <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
+	    <img src="img/panda-logo.jpg">
+	      <a class="navbar-brand" href="#">The Pandas Guide to China</a>
+	      <a class="navbar-brand mobile" href="#">The Pandas Guide</a>
+	      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+	        <span class="navbar-toggler-icon"></span>
+	      </button>
+
+	      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+	        <ul class="navbar-nav ml-auto">
+	          <li class="nav-item active">
+	            <a class="nav-link" href="index.html">Home</a>
+	          </li>
+	          <li class="nav-item dropdown">
+	            <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Teach</a>
+	          <div class="dropdown-menu" aria-labelledby="dropdown01">
+	            <a class="dropdown-item" href="about-teaching-china.html">About teaching in China</a>
+	            <a class="dropdown-item" href="why-teach-china.html">Why teach in China</a>
+	            <a class="dropdown-item" href="#">Job Requirements</a>
+	            <a class="dropdown-item" href="#">Teacher experiences</a>
+	            <a class="dropdown-item" href="faqs.html">FAQs</a>
+	          </div>         
+	          </li>
+	          <li class="nav-item dropdown">
+	            <a class="nav-link dropdown-toggle" href="#" id="dropdown02" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">China</a>
+	          <div class="dropdown-menu" aria-labelledby="dropdown02">
+	            <a class="dropdown-item" href="#">Cities</a>
+	            <a class="dropdown-item" href="#">Polpular Destinations</a>
+	            <a class="dropdown-item" href="#">History</a>
+	            <a class="dropdown-item" href="#">Gallery</a>
+	          </div>         
+	          </li>
+	          <li class="nav-item">
+	            <a class="nav-link " href="#">Jobs</a>
+	          </li>
+	          <li class="nav-item">
+	            <a class="nav-link " href="visas.html">Visas</a>
+	          </li>
+	          <li class="nav-item">
+	            <a class="nav-link " href="apply.html">Apply</a>
+	          </li>
+	        </ul>
+	      </div>
+	  </nav>  
     
     <section id="hero-img">
     </section>
@@ -109,8 +116,8 @@
       </div>
       <div class="container application-form">
       	<div class="text-center">
-          <h3 style="margin-top: -70px;"><span class="black-on-yellow-text">Complete the form below to apply.</span></h3>
-          <h3 style=""><span class="black-on-white-text">Complete the form below to apply.</span>
+          <h3 style="margin-top: -70px;"><span class="black-on-yellow-text">Application Form</span></h3>
+          <h3 style=""><span class="black-on-white-text">Apply with your contact details below.</span>
         </div>
         
 
@@ -163,8 +170,8 @@
               <div class="invalid-feedback">
                 Please provide a valid email.
               </div>
-	        </div>
-	      </div>
+	        	</div>
+	      	</div>
           
           <div class="form-row">
             <div class="col-md-6 mb-3">
@@ -257,299 +264,777 @@
         <!-- END Formspree.io Form -->
 
         <!-- START Simple Form -->
-		<form class="needs-validation" novalidate action="https://getsimpleform.com/messages?form_api_token=74dd9d8b72a4ab7cfe1450e845612ca2" method="post" enctype="multipart/form-data">
-		  <!-- the redirect_to is optional, the form will redirect to the referrer on submission 
-		  <input type='hidden' name='redirect_to' value='<the complete return url e.g. http://fooey.com/thank-you.html>' />-->
-		  <!-- all your input fields here.... -->
+        <form style="display: none;" class="needs-validation" novalidate action="https://getsimpleform.com/messages?form_api_token=74dd9d8b72a4ab7cfe1450e845612ca2" method="post" enctype="multipart/form-data">
+			  	<!-- the redirect_to is optional, the form will redirect to the referrer on submission 
+			  	<input type='hidden' name='redirect_to' value='<the complete return url e.g. http://fooey.com/thank-you.html>' />-->
+			  		<!-- all your input fields here.... -->
 
-		  <!-- name fist & last -->
-          <div class="form-row">
-            <div class="col-md-6 mb-3">
-              <label for="validationCustom01">First name</label>
-              <input type="text" class="form-control" id="validationCustom01" placeholder="First name" value="" name="fname" required>
-              <div class="valid-feedback">
-                Looks good!
+			  		<!-- name fist & last -->
+			  		<div class="form-row">
+			  			<div class="col-md-6 mb-3">
+			  				<label for="validationCustom01">First name</label>
+			  				<input type="text" class="form-control" id="validationCustom01" placeholder="First name" value="" name="fname" required>
+			  				<div class="valid-feedback">
+			  					Looks good!
+			  				</div>
+			  			</div>
+			  			<div class="col-md-6 mb-3">
+			  				<label for="validationCustom02">Last name</label>
+			  				<input type="text" class="form-control" id="validationCustom02" placeholder="Last name" value="" name="lname" required>
+			  				<div class="valid-feedback">
+			  					Looks good!
+			  				</div>
+			  			</div>
+			  		</div>
+
+			  		<!-- email -->
+			  		<label for="validationCustomEmail">Email</label>
+			  		<div class="input-group mb-3">
+			  			<div class="input-group-prepend">
+			  				<span class="input-group-text" id="basic-addon1">JohnDoe@example.com</span>
+			  			</div>
+			  			<input type="email" class="form-control" id="validationCustomEmail" placeholder="Email" value="" name="_replyto" required>
+			  		</div>
+			  		<div class="valid-feedback">
+			  			Looks good!
+			  		</div>
+			  		<div class="invalid-feedback">
+			  			Please provide a valid email.
+			  		</div>
+
+			  		<!-- Nationality -->
+			  		<div class="form-row">
+			  			<div class="col-md-6 mb-3">
+			  				<label for="validationCustom03">Nationality</label>
+              <!--<select class="form-control selectpicker countrypicker" data-live-search="true" ></select>
+              	<select class="form-control selectpicker countrypicker" data-flag="true"  ></select>-->
+              	<input type="text" class="form-control" id="validationCustom03" placeholder="American" name="nationality" required>
+              	<div class="valid-feedback">
+              		Looks good!
+              	</div>
+              	<div class="invalid-feedback">
+              		Where are you from?
+              	</div>
               </div>
             </div>
-            <div class="col-md-6 mb-3">
-              <label for="validationCustom02">Last name</label>
-              <input type="text" class="form-control" id="validationCustom02" placeholder="Last name" value="" name="lname" required>
-              <div class="valid-feedback">
-                Looks good!
+
+            <!-- Residence -->
+            <div class="form-row">
+            	<div class="col-md-6 mb-3">
+            		<label for="validationCustom03">Country of Residence</label>
+            		<input type="text" class="form-control" id="validationCustom03" placeholder="Country" name="country" required>
+            		<div class="valid-feedback">
+            			Looks good!
+            		</div>
+            		<div class="invalid-feedback">
+            			Where do you live?
+            		</div>
+            	</div>
+            	<div class="col-md-6 mb-3">
+            		<label for="validationCustom04">State / Province</label>
+            		<input type="text" class="form-control" id="validationCustom04" placeholder="State" name="state" required>
+            		<div class="valid-feedback">
+            			Looks good!
+            		</div>
+            		<div class="invalid-feedback">
+            			Please provide your state of residence.
+            		</div>
+            	</div>
+            	<div class="col-md-6 mb-3">
+            		<label for="validationCustom03">City</label>
+            		<input type="text" class="form-control" id="validationCustom03" placeholder="City" name="city" required>
+            		<div class="valid-feedback">
+            			Looks good!
+            		</div>
+            		<div class="invalid-feedback">
+            			Please provide your city of residence.
+            		</div>
+            	</div>            
+            	<div class="col-md-6 mb-3">
+            		<label for="validationCustom05">Zip</label>
+            		<input type="text" class="form-control" id="validationCustom05" placeholder="Zip" name="zipcode" required>
+            		<div class="valid-feedback">
+            			Looks good!
+            		</div>
+            		<div class="invalid-feedback">
+            			Please provide a valid zip.
+            		</div>
+            	</div>
+            </div>
+
+            <!-- File Uploads Section -->
+            <label for="inputGroupFileAddon01">Upload your Resume here</label>
+            <div class="input-group col-md-8 mb-3" style="margin-top:0px;">
+            	<div class="input-group-prepend">
+            		<span class="input-group-text" id="inputGroupFileAddon01">Upload Resume / CV</span>
+            	</div>
+            	<div class="custom-file">
+            		<input type="file" class="custom-file-input" id="inputGroupFile01"
+            		aria-describedby="inputGroupFileAddon01" name="cv_file">
+            		<label class="custom-file-label" for="inputGroupFile01">Choose file</label>
+            	</div>
+            </div><br>
+            <label for="inputGroupFileAddon01">Upload your Picture here</label>          
+            <div class="input-group col-md-8 mb-3" style="margin-top:0px;">
+            	<div class="input-group-prepend">
+            		<span class="input-group-text" id="inputGroupFileAddon01">Upload</span>
+            	</div>
+            	<div class="custom-file">
+            		<input type="file" class="custom-file-input" id="inputGroupFile01"
+            		aria-describedby="inputGroupFileAddon01" name="image_file">
+            		<label class="custom-file-label" for="inputGroupFile01">Choose file</label>
+            	</div>
+            </div>
+
+            <!-- New file upload with preview -1 -->
+            <div class="col-md-6" style="padding-left: 0;">
+            	<div class="form-group">
+            		<label>Upload your Picture here</label>
+            		<div class="input-group">
+            			<span class="input-group-btn">
+            				<span class="btn btn-default btn-file">
+            					Browse… <input type="file" id="imgInp-1" class="custom-file-input" name="image_file">
+            				</span>
+            			</span>
+            			<input type="text" class="form-control" readonly>
+            		</div>
+            		<img id='img-upload-1'/>
+            	</div>
+            </div>
+            <!-- End New file upload with preview -->
+            <!-- New file upload with preview -2 -->
+            <div class="col-md-6" style="padding-left: 0;">
+            	<div class="form-group">
+            		<label>Upload your Degree here</label>
+            		<div class="input-group">
+            			<span class="input-group-btn">
+            				<span class="btn btn-default btn-file">
+            					Browse… <input type="file" id="imgInp-2" class="custom-file-input" name="docs_file">
+            				</span>
+            			</span>
+            			<input type="text" class="form-control" readonly>
+            		</div>
+            		<img id='img-upload-2'/>
+            	</div>
+            </div>
+            <!-- End New file upload with preview -->
+            <!-- End File Uploads Section -->
+
+            <div class="form-group" style="margin-top:50px;">
+            	<div class="form-check">
+            		<input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+            		<label class="form-check-label" for="invalidCheck">
+            			Agree to terms and conditions
+            		</label>
+            		<div class="invalid-feedback">
+            			You must agree before submitting.
+            		</div>
+            	</div>
+            </div>
+            <button class="btn btn-primary btn-lg" type="submit" value='Test form'>Submit form</button>
+        </form>
+        <!-- END Simple Form -->
+
+        <!-- START Briskforms -->
+        <form style="display: none;" class="needs-validation" novalidate action="https://briskforms.com/go/8e9d82f5e2136bc6cb422a2ad5b3efb9" method="post" enctype="multipart/form-data">
+
+        	<!-- name fist & last -->
+        	<div class="form-row">
+        		<div class="col-md-6 mb-3">
+        			<label for="validationCustom01">First name</label>
+        			<input type="text" class="form-control" id="validationCustom01" placeholder="First name" value="" name="fname" required>
+        			<div class="valid-feedback">
+        				Looks good!
+        			</div>
+        		</div>
+        		<div class="col-md-6 mb-3">
+        			<label for="validationCustom02">Last name</label>
+        			<input type="text" class="form-control" id="validationCustom02" placeholder="Last name" value="" name="lname" required>
+        			<div class="valid-feedback">
+        				Looks good!
+        			</div>
+        		</div>
+        	</div>
+
+
+        	<!-- email -->
+        	<label for="validationCustomEmail">Email</label>
+        	<div class="input-group mb-3">
+        		<div class="input-group-prepend">
+        			<span class="input-group-text" id="basic-addon1">JohnDoe@example.com</span>
+        		</div>
+        		<input type="email" class="form-control" id="validationCustomEmail" placeholder="Email" value="" name="_replyto" required>
+        	</div>
+        	<div class="valid-feedback">
+        		Looks good!
+        	</div>
+        	<div class="invalid-feedback">
+        		Please provide a valid email.
+        	</div>
+
+        	<!-- Nationality -->
+        	<div class="form-row">
+        		<div class="col-md-6 mb-3">
+        			<label for="validationCustom03">Nationality</label>
+              <!--<select class="form-control selectpicker countrypicker" data-live-search="true" ></select>
+              	<select class="form-control selectpicker countrypicker" data-flag="true"  ></select>-->
+              	<input type="text" class="form-control" id="validationCustom03" placeholder="American" name="nationality" required>
+              	<div class="valid-feedback">
+              		Looks good!
+              	</div>
+              	<div class="invalid-feedback">
+              		Where are you from?
+              	</div>
               </div>
             </div>
-          </div>
 
-          
-          <!-- email -->
-	          <label for="validationCustomEmail">Email</label>
-	          <div class="input-group mb-3">
-				<div class="input-group-prepend">
-				  <span class="input-group-text" id="basic-addon1">JohnDoe@example.com</span>
-				</div>
-	          	<input type="email" class="form-control" id="validationCustomEmail" placeholder="Email" value="" name="_replyto" required>
+            <!-- Residence -->
+            <div class="form-row">
+            	<div class="col-md-6 mb-3">
+            		<label for="validationCustom03">Country of Residence</label>
+            		<input type="text" class="form-control" id="validationCustom03" placeholder="Country" name="country" required>
+            		<div class="valid-feedback">
+            			Looks good!
+            		</div>
+            		<div class="invalid-feedback">
+            			Where do you live?
+            		</div>
+            	</div>
+            	<div class="col-md-6 mb-3">
+            		<label for="validationCustom04">State / Province</label>
+            		<input type="text" class="form-control" id="validationCustom04" placeholder="State" name="state" required>
+            		<div class="valid-feedback">
+            			Looks good!
+            		</div>
+            		<div class="invalid-feedback">
+            			Please provide your state of residence.
+            		</div>
+            	</div>
+            	<div class="col-md-6 mb-3">
+            		<label for="validationCustom03">City</label>
+            		<input type="text" class="form-control" id="validationCustom03" placeholder="City" name="city" required>
+            		<div class="valid-feedback">
+            			Looks good!
+            		</div>
+            		<div class="invalid-feedback">
+            			Please provide your city of residence.
+            		</div>
+            	</div>            
+            	<div class="col-md-6 mb-3">
+            		<label for="validationCustom05">Zip</label>
+            		<input type="text" class="form-control" id="validationCustom05" placeholder="Zip" name="zipcode" required>
+            		<div class="valid-feedback">
+            			Looks good!
+            		</div>
+            		<div class="invalid-feedback">
+            			Please provide a valid zip.
+            		</div>
+            	</div>
+            </div>
+
+            <!-- File Uploads Section -->
+            <label for="inputGroupFileAddon01">Upload your Resume here</label>
+            <div class="input-group col-md-8 mb-3" style="margin-top:0px;">
+            	<div class="input-group-prepend">
+            		<span class="input-group-text" id="inputGroupFileAddon01">Upload Resume / CV</span>
+            	</div>
+            	<div class="custom-file">
+            		<input type="file" class="custom-file-input" id="inputGroupFile01"
+            		aria-describedby="inputGroupFileAddon01" name="cv_file">
+            		<label class="custom-file-label" for="inputGroupFile01">Choose file</label>
+            	</div>
+            </div><br>
+            <label for="inputGroupFileAddon01">Upload your Picture here</label>          
+            <div class="input-group col-md-8 mb-3" style="margin-top:0px;">
+            	<div class="input-group-prepend">
+            		<span class="input-group-text" id="inputGroupFileAddon01">Upload</span>
+            	</div>
+            	<div class="custom-file">
+            		<input type="file" class="custom-file-input" id="inputGroupFile01"
+            		aria-describedby="inputGroupFileAddon01" name="image_file">
+            		<label class="custom-file-label" for="inputGroupFile01">Choose file</label>
+            	</div>
+            </div>
+
+            <!-- New file upload with preview -1 -->
+            <div class="col-md-6" style="padding-left: 0;">
+            	<div class="form-group">
+            		<label>Upload your Picture here</label>
+            		<div class="input-group">
+            			<span class="input-group-btn">
+            				<span class="btn btn-default btn-file">
+            					Browse… <input type="file" id="imgInp-1" class="custom-file-input" name="image_file">
+            				</span>
+            			</span>
+            			<input type="text" class="form-control" readonly>
+            		</div>
+            		<img id='img-upload-1'/>
+            	</div>
+            </div>
+            <!-- End New file upload with preview -->
+            <!-- New file upload with preview -2 -->
+            <div class="col-md-6" style="padding-left: 0;">
+            	<div class="form-group">
+            		<label>Upload your Degree here</label>
+            		<div class="input-group">
+            			<span class="input-group-btn">
+            				<span class="btn btn-default btn-file">
+            					Browse… <input type="file" id="imgInp-2" class="custom-file-input" name="docs_file">
+            				</span>
+            			</span>
+            			<input type="text" class="form-control" readonly>
+            		</div>
+            		<img id='img-upload-2'/>
+            	</div>
+            </div>
+            <!-- End New file upload with preview -->
+            <!-- End File Uploads Section -->
+
+            <div class="form-group" style="margin-top:50px;">
+            	<div class="form-check">
+            		<input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+            		<label class="form-check-label" for="invalidCheck">
+            			Agree to terms and conditions
+            		</label>
+            		<div class="invalid-feedback">
+            			You must agree before submitting.
+            		</div>
+            	</div>
+            </div>
+            <button class="btn btn-primary btn-lg" type="submit" value='Test form'>Submit form</button>
+        </form>
+        <!-- END Briskforms -->
+
+        <!-- START Basin Forms -->
+        <form style="display: none;" accept-charset="UTF-8" class="needs-validation" novalidate action="https://usebasin.com/f/3d5c8cd5fc09"  method="post" enctype="multipart/form-data">
+        	<!--<form action="https://Basin Forms.com/go/8e9d82f5e2136bc6cb422a2ad5b3efb9">-->
+
+        		<!-- all your input fields here.... -->
+        		<!-- name fist & last -->
+        		<div class="form-row">
+        			<div class="col-md-6 mb-3">
+        				<label for="validationCustom01">First name</label>
+        				<input type="text" class="form-control" id="validationCustom01" placeholder="First name" value="" name="fname" required>
+        				<div class="valid-feedback">
+        					Looks good!
+        				</div>
+        			</div>
+        			<div class="col-md-6 mb-3">
+        				<label for="validationCustom02">Last name</label>
+        				<input type="text" class="form-control" id="validationCustom02" placeholder="Last name" value="" name="lname" required>
+        				<div class="valid-feedback">
+        					Looks good!
+        				</div>
+        			</div>
+        		</div>
+
+        		<!-- email -->
+        		<label for="validationCustomEmail">Email</label>
+        		<div class="input-group mb-3">
+        			<div class="input-group-prepend">
+        				<span class="input-group-text" id="basic-addon1">JohnDoe@example.com</span>
+        			</div>
+        			<input type="email" class="form-control" id="validationCustomEmail" placeholder="Email" value="" name="_replyto" required>
+        		</div>
+        		<div class="valid-feedback">
+        			Looks good!
+        		</div>
+        		<div class="invalid-feedback">
+        			Please provide a valid email.
+        		</div>
+
+        		<!-- Nationality -->
+        		<div class="form-row">
+        			<div class="col-md-6 mb-3">
+        				<label for="validationCustom03">Nationality</label>
+              <!--<select class="form-control selectpicker countrypicker" data-live-search="true" ></select>
+              	<select class="form-control selectpicker countrypicker" data-flag="true"  ></select>-->
+              	<input type="text" class="form-control" id="validationCustom03" placeholder="American" name="nationality" required>
+              	<div class="valid-feedback">
+              		Looks good!
+              	</div>
+              	<div class="invalid-feedback">
+              		Where are you from?
+              	</div>
               </div>
+            </div>
+
+            <!-- Residence -->
+            <div class="form-row">
+            	<div class="col-md-6 mb-3">
+            		<label for="validationCustom03">Country of Residence</label>
+            		<input type="text" class="form-control" id="validationCustom03" placeholder="Country" name="country" required>
+            		<div class="valid-feedback">
+            			Looks good!
+            		</div>
+            		<div class="invalid-feedback">
+            			Where do you live?
+            		</div>
+            	</div>
+            	<div class="col-md-6 mb-3">
+            		<label for="validationCustom04">State / Province</label>
+            		<input type="text" class="form-control" id="validationCustom04" placeholder="State" name="state" required>
+            		<div class="valid-feedback">
+            			Looks good!
+            		</div>
+            		<div class="invalid-feedback">
+            			Please provide your state of residence.
+            		</div>
+            	</div>
+            	<div class="col-md-6 mb-3">
+            		<label for="validationCustom03">City</label>
+            		<input type="text" class="form-control" id="validationCustom03" placeholder="City" name="city" required>
+            		<div class="valid-feedback">
+            			Looks good!
+            		</div>
+            		<div class="invalid-feedback">
+            			Please provide your city of residence.
+            		</div>
+            	</div>            
+            	<div class="col-md-6 mb-3">
+            		<label for="validationCustom05">Zip</label>
+            		<input type="text" class="form-control" id="validationCustom05" placeholder="Zip" name="zipcode" required>
+            		<div class="valid-feedback">
+            			Looks good!
+            		</div>
+            		<div class="invalid-feedback">
+            			Please provide a valid zip.
+            		</div>
+            	</div>
+            </div>
+
+            <!-- File Uploads Section -->
+            <label for="inputGroupFileAddon01">Upload your Resume here</label>
+            <div class="input-group col-md-8 mb-3" style="margin-top:0px;">
+            	<div class="input-group-prepend">
+            		<span class="input-group-text" id="inputGroupFileAddon01">Upload Resume / CV</span>
+            	</div>
+            	<div class="custom-file">
+            		<input type="file" class="custom-file-input" id="inputGroupFile01"
+            		aria-describedby="inputGroupFileAddon01" name="resume">
+            		<label class="custom-file-label" for="inputGroupFile01">Choose file</label>
+            	</div>
+            </div><br>
+            <label for="inputGroupFileAddon01">Upload your Picture here</label>          
+            <div class="input-group col-md-8 mb-3" style="margin-top:0px;">
+            	<div class="input-group-prepend">
+            		<span class="input-group-text" id="inputGroupFileAddon01">Upload</span>
+            	</div>
+            	<div class="custom-file">
+            		<input type="file" class="custom-file-input" id="inputGroupFile01"
+            		aria-describedby="inputGroupFileAddon01" name="cover-letter">
+            		<label class="custom-file-label" for="inputGroupFile01">Choose file</label>
+            	</div>
+            </div>
+
+            <!-- New file upload with preview -3 -->
+            <div class="col-md-6" style="padding-left: 0;">
+            	<div class="form-group">
+            		<label>Upload your Degree here</label>
+            		<div class="input-group">
+            			<span class="input-group-btn">
+            				<span class="btn btn-default btn-file">
+            					Browse… <input type="file" id="imgInp-3" class="custom-file-input" name="attachments[]" multiple>
+            				</span>
+            			</span>
+            			<input type="text" class="form-control" readonly>
+            		</div>
+            		<img id='img-upload-3'/>
+            	</div>
+            </div>
+            <!-- End New file upload with preview -->
+            <!-- End File Uploads Section -->
+
+            <div class="form-group" style="margin-top:50px;">
+            	<div class="form-check">
+            		<input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+            		<label class="form-check-label" for="invalidCheck">
+            			Agree to terms and conditions
+            		</label>
+            		<div class="invalid-feedback">
+            			You must agree before submitting.
+            		</div>
+            	</div>
+            </div>
+            <button class="btn btn-primary btn-lg" type="submit" value='Test form'>Submit form</button>
+        </form>
+        <!-- END Basin Forms -->
+
+        <!-- START Netlify Forms -->
+        <form accept-charset="UTF-8" class="needs-validation" novalidate data-netlify="true"  method="post" enctype="multipart/form-data">
+
+            <!-- all your input fields here.... -->
+            <!-- name fist & last -->
+            <div class="form-row">
+              <div class="col-md-6 mb-3">
+                <label for="validationCustom01">First name</label>
+                <input type="text" class="form-control" id="validationCustom01" placeholder="First name" value="" name="fname" required>
+                <div class="valid-feedback">
+                  Looks good!
+                </div>
+              </div>
+              <div class="col-md-6 mb-3">
+                <label for="validationCustom02">Last name</label>
+                <input type="text" class="form-control" id="validationCustom02" placeholder="Last name" value="" name="lname" required>
+                <div class="valid-feedback">
+                  Looks good!
+                </div>
+              </div>
+            </div>
+
+            <!-- email -->
+            <label for="validationCustomEmail">Email</label>
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="basic-addon1">JohnDoe@example.com</span>
+              </div>
+              <input type="email" class="form-control" id="validationCustomEmail" placeholder="Email" value="" name="_replyto" required>
+            </div>
+            <div class="valid-feedback">
+              Looks good!
+            </div>
+            <div class="invalid-feedback">
+              Please provide a valid email.
+            </div>
+
+            <!-- Nationality -->
+            <div class="form-row">
+              <div class="col-md-6 mb-3">
+                <label for="validationCustom03">Nationality</label>
+              <!--<select class="form-control selectpicker countrypicker" data-live-search="true" ></select>
+                <select class="form-control selectpicker countrypicker" data-flag="true"  ></select>-->
+                <input type="text" class="form-control" id="validationCustom03" placeholder="American" name="nationality" required>
                 <div class="valid-feedback">
                   Looks good!
                 </div>
                 <div class="invalid-feedback">
-                  Please provide a valid email.
+                  Where are you from?
                 </div>
-          
-          <!-- Nationality -->
-          <div class="form-row">
-            <div class="col-md-6 mb-3">
-              <label for="validationCustom03">Nationality</label>
-              <select class="form-control selectpicker countrypicker" data-flag="true" data-live-search="true" ></select>
-              <select class="selectpicker countrypicker" data-flag="true" ></select>
-              <!--<input type="text" class="form-control" id="validationCustom03" placeholder="American" name="nationality" required>-->
-	            <div class="valid-feedback">
-	              Looks good!
-	          	</div>
-              <div class="invalid-feedback">
-                Where are you from?
               </div>
             </div>
-          </div>
 
-          <!-- Residence -->
-          <div class="form-row">
-          	<div class="col-md-6 mb-3">
-              <label for="validationCustom03">Country of Residence</label>
-              <input type="text" class="form-control" id="validationCustom03" placeholder="Country" name="country" required>
-	            <div class="valid-feedback">
-	              Looks good!
-	          	</div>
-              <div class="invalid-feedback">
-                Where do you live?
-              </div>
-            </div>
-            <div class="col-md-6 mb-3">
-              <label for="validationCustom04">State / Province</label>
-              <input type="text" class="form-control" id="validationCustom04" placeholder="State" name="state" required>
+            <!-- Residence -->
+            <div class="form-row">
+              <div class="col-md-6 mb-3">
+                <label for="validationCustom03">Country of Residence</label>
+                <input type="text" class="form-control" id="validationCustom03" placeholder="Country" name="country" required>
                 <div class="valid-feedback">
                   Looks good!
-              	</div>
-              <div class="invalid-feedback">
-                Please provide your state of residence.
+                </div>
+                <div class="invalid-feedback">
+                  Where do you live?
+                </div>
               </div>
-            </div>
-            <div class="col-md-6 mb-3">
-              <label for="validationCustom03">City</label>
-              <input type="text" class="form-control" id="validationCustom03" placeholder="City" name="city" required>
-	            <div class="valid-feedback">
-	              Looks good!
-	          	</div>
-              <div class="invalid-feedback">
-                Please provide your city of residence.
-              </div>
-            </div>            
-            <div class="col-md-6 mb-3">
-              <label for="validationCustom05">Zip</label>
-              <input type="text" class="form-control" id="validationCustom05" placeholder="Zip" name="zipcode" required>
+              <div class="col-md-6 mb-3">
+                <label for="validationCustom04">State / Province</label>
+                <input type="text" class="form-control" id="validationCustom04" placeholder="State" name="state" required>
                 <div class="valid-feedback">
                   Looks good!
-              	</div>
-              <div class="invalid-feedback">
-                Please provide a valid zip.
+                </div>
+                <div class="invalid-feedback">
+                  Please provide your state of residence.
+                </div>
+              </div>
+              <div class="col-md-6 mb-3">
+                <label for="validationCustom03">City</label>
+                <input type="text" class="form-control" id="validationCustom03" placeholder="City" name="city" required>
+                <div class="valid-feedback">
+                  Looks good!
+                </div>
+                <div class="invalid-feedback">
+                  Please provide your city of residence.
+                </div>
+              </div>            
+              <div class="col-md-6 mb-3">
+                <label for="validationCustom05">Zip</label>
+                <input type="text" class="form-control" id="validationCustom05" placeholder="Zip" name="zipcode" required>
+                <div class="valid-feedback">
+                  Looks good!
+                </div>
+                <div class="invalid-feedback">
+                  Please provide a valid zip.
+                </div>
               </div>
             </div>
-          </div>
 
-          <!-- File Uploads Section -->
-          <label for="inputGroupFileAddon01">Upload your Resume here</label>
-          <div class="input-group col-md-8 mb-3" style="margin-top:0px;">
-            <div class="input-group-prepend">
-              <span class="input-group-text" id="inputGroupFileAddon01">Upload Resume / CV</span>
+            <!-- File Uploads Section -->
+            <label for="inputGroupFileAddon01">Upload your Resume here</label>
+            <div class="input-group col-md-8 mb-3" style="margin-top:0px;">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="inputGroupFileAddon01">Upload Resume / CV</span>
+              </div>
+              <div class="custom-file">
+                <input type="file" class="custom-file-input" id="inputGroupFile01"
+                aria-describedby="inputGroupFileAddon01" name="resume">
+                <label class="custom-file-label" for="inputGroupFile01">Choose file</label>
+              </div>
+            </div><br>
+            <label for="inputGroupFileAddon01">Upload your Picture here</label>          
+            <div class="input-group col-md-8 mb-3" style="margin-top:0px;">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="inputGroupFileAddon01">Upload</span>
+              </div>
+              <div class="custom-file">
+                <input type="file" class="custom-file-input" id="inputGroupFile01"
+                aria-describedby="inputGroupFileAddon01" name="cover-letter">
+                <label class="custom-file-label" for="inputGroupFile01">Choose file</label>
+              </div>
             </div>
-            <div class="custom-file">
-              <input type="file" class="custom-file-input" id="inputGroupFile01"
-                aria-describedby="inputGroupFileAddon01" name="cv_file">
-              <label class="custom-file-label" for="inputGroupFile01">Choose file</label>
-            </div>
-          </div><br>
-          <label for="inputGroupFileAddon01">Upload your Picture here</label>          
-          <div class="input-group col-md-8 mb-3" style="margin-top:0px;">
-            <div class="input-group-prepend">
-              <span class="input-group-text" id="inputGroupFileAddon01">Upload</span>
-            </div>
-            <div class="custom-file">
-              <input type="file" class="custom-file-input" id="inputGroupFile01"
-                aria-describedby="inputGroupFileAddon01" name="image_file">
-              <label class="custom-file-label" for="inputGroupFile01">Choose file</label>
-            </div>
-          </div>
 
-          <!-- New file upload with preview -1 -->
-          <div class="col-md-6" style="padding-left: 0;">
+            <!-- New file upload with preview -4
+            <div class="col-md-6" style="padding-left: 0;">
               <div class="form-group">
-                  <label>Upload your Picture here</label>
-                  <div class="input-group">
-                      <span class="input-group-btn">
-                          <span class="btn btn-default btn-file">
-                              Browse… <input type="file" id="imgInp-1" class="custom-file-input" name="image_file">
-                          </span>
-                      </span>
-                      <input type="text" class="form-control" readonly>
-                  </div>
-                  <img id='img-upload-1'/>
-              </div>
-          </div>
-          <!-- End New file upload with preview -->
-          <!-- New file upload with preview -2 -->
-          <div class="col-md-6" style="padding-left: 0;">
-              <div class="form-group">
-                  <label>Upload your Degree here</label>
-                  <div class="input-group">
-                      <span class="input-group-btn">
-                          <span class="btn btn-default btn-file">
-                              Browse… <input type="file" id="imgInp-2" class="custom-file-input" name="docs_file">
-                          </span>
-                      </span>
-                      <input type="text" class="form-control" readonly>
-                  </div>
-                  <img id='img-upload-2'/>
-              </div>
-          </div>
-          <!-- End New file upload with preview -->
-          <!-- End File Uploads Section -->
-
-          <div class="form-group" style="margin-top:50px;">
-            <div class="form-check">
-              <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
-              <label class="form-check-label" for="invalidCheck">
-                Agree to terms and conditions
-              </label>
-              <div class="invalid-feedback">
-                You must agree before submitting.
+                <label>Upload your Degree here</label>
+                <div class="input-group">
+                  <span class="input-group-btn">
+                    <span class="btn btn-default btn-file">
+                      Browse… <input type="file" id="imgInp-4" class="custom-file-input" name="attachments">
+                    </span>
+                  </span>
+                  <input type="text" class="form-control" readonly>
+                </div>
+                <img id='img-upload-4'/>
               </div>
             </div>
-          </div>
-          <button class="btn btn-primary btn-lg" type="submit" value='Test form'>Submit form</button>
+             End New file upload with preview -->
+            <!-- End File Uploads Section -->
+
+            <div class="form-group" style="margin-top:50px;">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                <label class="form-check-label" for="invalidCheck">
+                  Agree to terms and conditions
+                </label>
+                <div class="invalid-feedback">
+                  You must agree before submitting.
+                </div>
+              </div>
+            </div>
+            <button class="btn btn-primary btn-lg" type="submit" value='Test form'>Submit form</button>
         </form>
-        <!-- END Simple Form -->
+        <!-- END Netlify Forms -->
 
+	    </div>
+	  </section>
 
-    </div>
-  </section>
+	  <section id="footer" style="margin-top: 0rem;">
+	  	<footer class="container py-5">
+	  	  <div class="row">
+	  	    <div class="col-12 col-md">
+	          <img class="footer-logo" src="img/panda-logo.png">
+	  	     
+	  	      <small class="d-block mb-3 text-dark">&copy; 2017-2019</small> </div>
+	  	    <div class="col-6 col-md">
+	  	      <h5>Features</h5>
+	  	      <ul class="list-unstyled text-small">
+	  	        <li><a class="text-dark" href="#">Cool stuff</a></li>
+	  	        <li><a class="text-dark" href="#">Random feature</a></li>
+	  	        <li><a class="text-dark" href="#">Team feature</a></li>
+	  	        <li><a class="text-dark" href="#">Stuff for developers</a></li>
+	  	        <li><a class="text-dark" href="#">Another one</a></li>
+	  	        <li><a class="text-dark" href="#">Last time</a></li>
+	  	      </ul>
+	  	    </div>
+	  	    <div class="col-6 col-md">
+	  	      <h5>Resources</h5>
+	  	      <ul class="list-unstyled text-small">
+	  	        <li><a class="text-dark" href="#">Resource</a></li>
+	  	        <li><a class="text-dark" href="#">Resource name</a></li>
+	  	        <li><a class="text-dark" href="#">Another resource</a></li>
+	  	        <li><a class="text-dark" href="#">Final resource</a></li>
+	  	      </ul>
+	  	    </div>
+	  	    <div class="col-6 col-md">
+	  	      <h5>Resources</h5>
+	  	      <ul class="list-unstyled text-small">
+	  	        <li><a class="text-dark" href="#">Business</a></li>
+	  	        <li><a class="text-dark" href="#">Education</a></li>
+	  	        <li><a class="text-dark" href="#">Government</a></li>
+	  	        <li><a class="text-dark" href="#">Gaming</a></li>
+	  	      </ul>
+	  	    </div>
+	  	    <div class="col-6 col-md">
+	  	      <h5>About</h5>
+	  	      <ul class="list-unstyled text-small">
+	  	        <li><a class="text-dark" href="#">Team</a></li>
+	  	        <li><a class="text-dark" href="#">Locations</a></li>
+	  	        <li><a class="text-dark" href="#">Privacy</a></li>
+	  	        <li><a class="text-dark" href="#">Terms</a></li>
+	  	      </ul>
+	  	    </div>
+	  	  </div>
+	  	</footer>
+	  </section>
 
-  <section id="footer" style="margin-top: 0rem;">
-  	<footer class="container py-5">
-  	  <div class="row">
-  	    <div class="col-12 col-md">
-          <img class="footer-logo" src="img/panda-logo.png">
-  	     
-  	      <small class="d-block mb-3 text-dark">&copy; 2017-2019</small> </div>
-  	    <div class="col-6 col-md">
-  	      <h5>Features</h5>
-  	      <ul class="list-unstyled text-small">
-  	        <li><a class="text-dark" href="#">Cool stuff</a></li>
-  	        <li><a class="text-dark" href="#">Random feature</a></li>
-  	        <li><a class="text-dark" href="#">Team feature</a></li>
-  	        <li><a class="text-dark" href="#">Stuff for developers</a></li>
-  	        <li><a class="text-dark" href="#">Another one</a></li>
-  	        <li><a class="text-dark" href="#">Last time</a></li>
-  	      </ul>
-  	    </div>
-  	    <div class="col-6 col-md">
-  	      <h5>Resources</h5>
-  	      <ul class="list-unstyled text-small">
-  	        <li><a class="text-dark" href="#">Resource</a></li>
-  	        <li><a class="text-dark" href="#">Resource name</a></li>
-  	        <li><a class="text-dark" href="#">Another resource</a></li>
-  	        <li><a class="text-dark" href="#">Final resource</a></li>
-  	      </ul>
-  	    </div>
-  	    <div class="col-6 col-md">
-  	      <h5>Resources</h5>
-  	      <ul class="list-unstyled text-small">
-  	        <li><a class="text-dark" href="#">Business</a></li>
-  	        <li><a class="text-dark" href="#">Education</a></li>
-  	        <li><a class="text-dark" href="#">Government</a></li>
-  	        <li><a class="text-dark" href="#">Gaming</a></li>
-  	      </ul>
-  	    </div>
-  	    <div class="col-6 col-md">
-  	      <h5>About</h5>
-  	      <ul class="list-unstyled text-small">
-  	        <li><a class="text-dark" href="#">Team</a></li>
-  	        <li><a class="text-dark" href="#">Locations</a></li>
-  	        <li><a class="text-dark" href="#">Privacy</a></li>
-  	        <li><a class="text-dark" href="#">Terms</a></li>
-  	      </ul>
-  	    </div>
-  	  </div>
-  	</footer>
-  </section>
+	  <!-- jQuery js -->
+	  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+	  </script>
 
-
-  <!-- jQuery js -->
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-
-  <!-- File Uploads Show fileName script -->
-  	<script>
-	  $('#inputGroupFile02').on('change',function(){
+	  <!-- File Uploads Show fileName script -->
+	  <script>
+	  	$('#inputGroupFile02').on('change',function(){
 	      //get the file name
 	      var fileName = $(this).val();
 	      //replace the "Choose a file" label
 	      $(this).next('.custom-file-label').html(fileName);
-	  })
-	</script>
+	    })
+	  </script>
 
-	<script>
-          // Add the following code if you want the name of the file appear on select
-          $(".custom-file-input").on("change", function() {
-           var fileName = $(this).val().split("\\").pop();
-          $(this).siblings(".custom-file-label").addClass("selected").html(fileName);
-          });
+	  <script>
+      // Add the following code if you want the name of the file appear on select
+      $(".custom-file-input").on("change", function() {
+      	var fileName = $(this).val().split("\\").pop();
+      $(this).siblings(".custom-file-label").addClass("selected").html(fileName);
+      });
     </script> 
 
-        <!-- New file upload with preview JS -->
+    <!-- New file upload with preview JS 
     <script>
-    $(document).ready( function() {
-    	$(document).on('change', '.btn-file :file', function() {
-		var input = $(this),
-			label = input.val().replace(/\\/g, '/').replace(/.*\//, '');
-		input.trigger('fileselect', [label]);
-		});
+    	$(document).ready( function() {
+    		$(document).on('change', '.btn-file :file', function() {
+    			var input = $(this),
+    			label = input.val().replace(/\\/g, '/').replace(/.*\//, '');
+    			input.trigger('fileselect', [label]);
+    		});
 
-		$('.btn-file :file').on('fileselect', function(event, label) {
+    		$('.btn-file :file').on('fileselect', function(event, label) {
 
-		    var input = $(this).parents('.input-group').find(':text'),
-		        log = label;
+    			var input = $(this).parents('.input-group').find(':text'),
+    			log = label;
 
-		    if( input.length ) {
-		        input.val(log);
-		    } else {
-		        if( log ) alert(log);
-		    }
+    			if( input.length ) {
+    				input.val(log);
+    			} else {
+    				if( log ) alert(log);
+    			}
 
-		});
-		function readURL(input) {
-		    if (input.files && input.files[0]) {
-		        var reader = new FileReader();
+    		});
+    		function readURL(input) {
+    			if (input.files && input.files[0]) {
+    				var reader = new FileReader();
 
-		        reader.onload = function (e) {
-		            $('#img-upload-1').attr('src', e.target.result);
-		        }
+    				reader.onload = function (e) {
+    					$('#img-upload-4').attr('src', e.target.result);
+    				}
 
-		        reader.readAsDataURL(input.files[0]);
-		    }
-		}
+    				reader.readAsDataURL(input.files[0]);
+    			}
+    		}
 
-		$("#imgInp-1").change(function(){
-		    readURL(this);
-		}); 	
-	});
-	</script>
+    		$("#imgInp-4").change(function(){
+    			readURL(this);
+    		}); 	
+    	});
+    </script>-->
 
-  <!-- Bootstrap Selectpicker js -->
-  <script type="text/javascript" src="dist/js/bootstrap-select-country.min.js"></script>
-  <script type="text/javascript" src="dist/js/bootstrap-select-country.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.9/dist/js/bootstrap-select.min.js"></script>
-  <!-- popper.js -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-  <!-- bootstrap.js -->
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-</body>
+    <!-- Bootstrap Selectpicker js 
+    <script type="text/javascript" src="dist/js/bootstrap-select-country.min.js"></script>
+    <script type="text/javascript" src="dist/js/bootstrap-select-country.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.1/dist/js/bootstrap-select.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap-select.min.js"></script>"></script>-->
+    <!-- popper.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <!-- bootstrap.js -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+   </body>
 </html>
